@@ -1,0 +1,29 @@
+.container{
+   
+  
+    border-radius: 20px;
+    background-color: darkgray;
+   margin: auto;
+    height: 100vh;
+    width: 100vh;
+}
+.send-form{
+    margin: auto;
+}
+.msg-input{
+  
+}
+.sent{
+background-color: darkred;
+margin-left: 50%;
+}
+.recived{
+background-color: green;
+}
+.message{
+margin: 10px;
+max-width: 50vh;
+}
+.submit-btn{
+
+}
