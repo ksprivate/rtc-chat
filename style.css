@@ -1,29 +1,28 @@
-.container{
-   
-  
-    border-radius: 20px;
-    background-color: darkgray;
-   margin: auto;
-    height: 100vh;
-    width: 100vh;
-}
-.send-form{
-    margin: auto;
-}
-.msg-input{
-  
-}
-.sent{
-background-color: darkred;
-margin-left: 50%;
+.main{
+  display: flex;
+  flex-direction: column;
+  width: 100vh;
+  height: 100vh;
+  margin: auto;
+  background-color: lavenderblush;
+  overflow: scroll;
 }
 .recived{
-background-color: green;
-}
-.message{
-margin: 10px;
-max-width: 50vh;
-}
-.submit-btn{
-
-}
+  align-self: flex-start;
+    background-color: mediumaquamarine;
+  }
+  .sent{
+    background-color: mediumvioletred;
+    align-self: flex-end;
+  }
+  .message{
+      padding-right: 10px;
+      margin-top: 5px;
+    padding-left: 10px;
+  line-height: 30px;
+    border-radius: 10px;
+    color: white;
+    max-width: 300px;
+    min-height: 30px;
+    word-wrap: break-word;
+  }
