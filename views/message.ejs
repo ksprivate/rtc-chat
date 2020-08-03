@@ -7,14 +7,17 @@
     <link rel="stylesheet" href="./style.css">
     <script src="/script.js" defer></script>
     <script src="/socket.io/socket.io.js"></script>
-
+<script>
+    const id='<%=id%>'
+    console.log('<%=users%>')
+</script>
 </head>
 <body>
 <div class="main" id="main">
-   <button id="btn"> test</button>
+ 
 </div>
-<form>
-    <input type="text" name="message">
+<form id="send-form"  action="/">
+    <input type="text" id="message" >
     <button id="submit-btn" type="submit">Send</button>
 </form>
 </body>
