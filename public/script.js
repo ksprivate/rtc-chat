@@ -3,7 +3,7 @@ const socket = io("http://127.0.0.1:3000");
 let name = null;
 window.onload = function () {
   name = prompt("Enter nickname");
-
+document.title=`RTC-Chat ${name}`  
   socket.emit("user-connected", id, name);
   printMsg("You joined", "sent");
 };
@@ -41,5 +41,5 @@ function printMsg(msg, args) {
   message.classList.add(args);
 
   message.innerHTML = msg;
-  main.append(message);
+  main.insertBefore(message,main.firstChild)
 }
