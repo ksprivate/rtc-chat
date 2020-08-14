@@ -14,6 +14,7 @@ app.get("/", (req, res) => {
   res.render("home");
 });
 app.post("/createnewroom", (req, res) => {
+ 
   let id = nanoid();
 
   let room = { roomid: id, users: [] };
@@ -23,22 +24,21 @@ app.post("/createnewroom", (req, res) => {
 });
 
 app.get("/:id", (req, res) => {
-  if(rooms){
- rooms.forEach((o) => {
+  rooms.forEach((o) => {
     if (o.roomid == req.params.id) {
-      res.render("message", {
-        id: o.roomid,
-        
-      });
+      if (o.users.length + 1 <= 2) {
+        res.render("message", {
+          id: o.roomid,
+        });
+      } else {
+        res.render("full");
+      }
     }
   });
-  }else{
-res.status(404);
-  res.send("room not found");
-  res.end();
+  if (!res.headersSent) {
+    res.status(404);
+    res.render("404");
   }
- 
-  
 });
 io.on("connection", (socket) => {
   socket.on("message", (id, data) => {
@@ -69,6 +69,5 @@ io.on("connection", (socket) => {
     socket.to(id).broadcast.emit("user-disconnected", data);
   });
 });
-
 
 server.listen(process.env.PORT || 3000);
