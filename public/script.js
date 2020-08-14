@@ -5,6 +5,7 @@ window.onload = function () {
   name = prompt("Enter nickname");
 document.title=`RTC-Chat ${name}`  
   socket.emit("user-connected", id, name);
+ 
   printMsg("You joined", "sent");
 };
 window.onunload = function () {
@@ -12,9 +13,11 @@ window.onunload = function () {
 };
 socket.on("user-disconnected", (data) => {
   printMsg(`${data} left!`, "recived");
+ 
 });
 socket.on("user-connected", (data) => {
   printMsg(`${data} joined!`, "recived");
+  
 });
 socket.on("message", (data) => {
   printMsg(data, "recived");

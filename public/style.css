@@ -1,84 +1,95 @@
-.main{
-  
+.main {
   display: flex;
   flex-direction: column;
   width: 800px;
   max-width: 800px;
   height: 90%;
   background-color: yellow;
-overflow-y: scroll;
-overflow-x: hidden;
+  overflow-y: scroll;
+  overflow-x: hidden;
   flex-direction: column-reverse;
 }
-#container{
-  
+#container {
   width: 800px;
   max-width: 800px;
   height: 100vh;
   margin: auto;
   background-color: green;
 }
-.recived{
+.recived {
   align-self: flex-start;
-    background-color: mediumaquamarine;
-  }
-  .sent{
-    background-color: mediumvioletred;
-    align-self: flex-end;
-  }
-  .message{
-
-      padding-right: 10px;
-      margin-top: 5px;
-    padding-left: 10px;
-  line-height: 30px;
-    border-radius: 10px;
-    color: white;
-    max-width: 300px;
-    min-height: 30px;
-    word-wrap: break-word;
-  }
-  .users{
-    position:fixed;
-    width: 200px;
-    max-width: 400px;
-    background-color: grey;
-    height: 100%;
-    overflow: scroll;
-    left: 5px;
-    top: 5px;
-    display: flex;
-  }
-  .user{
-    padding-right: 10px;
-    margin-top: 5px;
+  background-color: mediumaquamarine;
+}
+.sent {
+  background-color: mediumvioletred;
+  align-self: flex-end;
+}
+.message {
+  padding-right: 10px;
+  margin-top: 5px;
   padding-left: 10px;
-line-height: 30px;
+  line-height: 30px;
   border-radius: 10px;
   color: white;
   max-width: 300px;
   min-height: 30px;
   word-wrap: break-word;
-  }
-  .send{
-    
-    
-    width: 100%;
-    height: 10%;
-    background-color: red;
+}
+.users {
+  position: fixed;
+  width: 200px;
+  max-width: 400px;
+  background-color: grey;
+  height: 100%;
+  overflow: scroll;
+  left: 5px;
+  top: 5px;
+  display: flex;
+}
+.user {
+  padding-right: 10px;
+  margin-top: 5px;
+  padding-left: 10px;
+  line-height: 30px;
+  border-radius: 10px;
+  color: white;
+  max-width: 300px;
+  min-height: 30px;
+  word-wrap: break-word;
+}
+.send {
+  width: 100%;
+  height: 10%;
+  background-color: red;
+}
+#send-form input {
+  width: 90%;
+  height: 30px;
+}
+#send-form button {
+  width: 10%;
+  height: 30px;
+}
+#send-form {
+  margin: auto;
+}
+#form {
+  margin: auto;
+}
 
-    
+#security {
+  width: 150px;
+
+margin: 0 auto;
+text-align: center;
+}
+#button-div{
  
-  }
- #send-form input{
-    width: 90%;
-    height: 30px;
-  }
-  #send-form button{
-width: 10%;
-height: 30px;
+  margin: 200px auto;
+  
+  text-align: center;
+  width: 200px;
+  height: 100px;
+ 
+}
 
-  }
-  #send-form {
-    margin: auto;
-  }
