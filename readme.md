@@ -1,5 +1,5 @@
 # RTC-Chat
 
-This is one of my simple **socket.io** projects  hope you enjoy it
+This is my first **socket.io** project  hope you like it
 
 
