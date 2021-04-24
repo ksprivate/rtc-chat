@@ -1,5 +1,5 @@
 const messagenput = document.getElementById("message");
-const socket = io("http://127.0.0.1:3000");
+const socket = io("https://best-chat-ever-2.herokuapp.com");
 let name = "";
 window.onload = function () {
   while (name === "") {
